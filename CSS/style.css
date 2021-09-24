@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden;
+    background-color: #F8F9FB;
+}
+
+@font-face {
+    font-family: Roboto__Bold;
+    src: url('../Fonts/Roboto/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: Roboto__Medium;
+    src: url('../Fonts/Roboto/Roboto-Medium.ttf');
+}
+
+.wrapper {
+    padding: 20px 20px 20px 20px;
+}
+
+.menu li {
+    list-style: none;
+    font-size: calc(14pt + 0.15vw);
+    font-family: 'Roboto__Bold';
+    transform: translateY(12px);
+}
+
+.menu a {
+    text-decoration: none;
+    color: #7DB6FD;
+}
+
+.Login__bonusmate ul {
+    float: right;
+}
+
+.Login__bonusmate ul li a {
+    text-decoration: none;
+}
+
+.Login__bonusmate ul li {
+    display: inline-block;
+    padding: 0px 20px 0px 20px;
+}
+
+.check__btn {
+    float: right;
+    padding: 10px 10px 10px 10px;
+}
+
+#check {
+    float: right;
+    display: none;
+}
+
+.check__btn {
+    display: none;
+}
+
+.Brand__color {
+    background: linear-gradient(262.87deg, #FFB608 5.56%, #F8DC29 95.83%);
+    padding: 18px 18px 18px 18px;
+    border-radius: 15px;
+}
+
+.Login__brand {
+    display: flex;
+}
+
+.Login__brand h1 {
+    font-size: calc(20pt + 0.15vw);
+    color: #FEBE0F;
+    transform: translateY(15px);
+    padding: 0px 10px 0px 10px;
+    letter-spacing: 0.03em;
+    font-family: 'Mirza', cursive;
+}
+
+@media screen and (max-width: 640px) {
+    .check__btn {
+        display: block;
+    }
+    .check__btn img {
+        width: 35px;
+    }
+    #check {
+        display: none;
+    }
+    .Login__bonusmate ul li {
+        display: block;
+    }
+    .menu {
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        left: -150px;
+        transition: .3s ease-in-out;
+        min-height: 100vh;
+        height: 100vh;
+    }
+    #check:checked~ul {
+        top: 80px;
+        left: 0;
+        bottom: 0;
+        transition: .3s ease-in-out;
+        width: 200px;
+        min-height: 100vh;
+        height: 100vh;
+        background: #D9E9FE;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .Brand__color {
+        background: linear-gradient(262.87deg, #FFB608 5.56%, #F8DC29 95.83%);
+        padding: 10px 10px 10px 10px;
+        border-radius: 10px;
+    }
+    .Login__brand h1 {
+        font-size: calc(12pt + 0.15vw);
+    }
+    .menu li {
+        font-size: calc(10pt + 0.15vw);
+    }
+    .Login__bonusmate ul li {
+        padding: 20px;
+    }
+}
+
+#banner {
+    height: 100vh;
+    width: 100%;
+}
+
+.row__login__pg {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 50px 0px;
+}
+
+.column__login__lg {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.Left___login__pg__col {
+    /* border: 1px solid black; */
+    height: auto;
+}
+
+.Right__login__pg__col {
+    height: auto;
+    /* border: 1px solid black; */
+}
+
+.text__pg {
+    text-align: center;
+}
+
+.text__pg h2 {
+    font-size: calc(18pt + 0.15vw);
+    color: #3A4ACE;
+    line-height: 1.6195;
+    letter-spacing: 0.03em;
+    font-family: 'Roboto__Bold';
+}
+
+.text__pg span {
+    border-bottom: 3px solid #293EB7;
+    padding: 10px 0px;
+}
+
+.login__pg__para {
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+}
+
+.login__pg__para p {
+    color: #3A4ACE;
+    line-height: 1.6195;
+    letter-spacing: 0.03em;
+    font-size: calc(9pt + o.15vw);
+    font-family: 'Roboto__Medium';
+}
+
+.input {
+    max-width: 70%;
+    margin: auto;
+}
+
+.input__form {
+    margin: 30px 0px 0px 0px;
+}
+
+input[type="text"] {
+    font-size: calc(9pt + 0.15vw);
+    font-family: 'Roboto__Medium';
+    line-height: 1.6195;
+    letter-spacing: 0.03em;
+}
+
+.form-control:focus {
+    background-color: #D9E9FE;
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.form-control::-webkit-input-placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #293EB7;
+    /* Firefox */
+}
+
+.form-control::-moz-placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #293EB7;
+    /* Firefox */
+}
+
+.form-control:-ms-input-placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #293EB7;
+    /* Firefox */
+}
+
+.form-control::-ms-input-placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #293EB7;
+    /* Firefox */
+}
+
+.form-control::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #293EB7;
+    /* Firefox */
+}
+
+.form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #293EB7;
+}
+
+.form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #293EB7;
+}
+
+.form-control {
+    background-color: #D9E9FE;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 15px 15px 15px 15px;
+    border-radius: 18px;
+}
+
+.float {
+    float: right;
+    margin: 8px 0px 0px 0px;
+}
+
+.float p {
+    color: #000000;
+    font-size: calc(8pt + 0.15vw);
+    font-family: 'Roboto__Medium';
+    line-height: 1.6195;
+    letter-spacing: 0.03em;
+}
+
+.button {
+    padding: 30px;
+    text-align: center;
+}
+
+.button button {
+    border: none;
+    padding: 12px 180px 12px 180px;
+    background-color: #FF382B;
+    border-radius: 18px;
+    color: #FFFFFF;
+    font-size: calc(8pt + 0.15vw);
+    font-family: 'Roboto__Bold';
+    line-height: 1.6195;
+    letter-spacing: 0.03em;
+    transition: .3s ease-in;
+    box-shadow: 0px 16px 20px rgba(105, 105, 105, 0.18);
+}
+
+.button button:hover {
+    transform: translateY(5px);
+    transition: .3s ease-in;
+    background-color: #D9E9FE;
+    color: #293EB7;
+    border: 1px solid #293EB7;
+}
+
+.img__div img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1080px) {
+    .login__pg__para p {
+        font-size: calc(8pt + 0.15vw);
+    }
+    .text__pg h2 {
+        font-size: calc(12pt + 0.15vw);
+    }
+    input[type="text"] {
+        font-size: calc(8pt + 0.15vw);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .login__pg__para br {
+        display: none;
+    }
+    .button button {
+        padding: 12px 80px 12px 80px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .login__pg__para p {
+        font-size: calc(6pt + 0.15vw);
+    }
+    .text__pg h2 {
+        font-size: calc(8pt + 0.15vw);
+    }
+    input[type="text"] {
+        font-size: calc(6pt + 0.15vw);
+    }
+    .row__login__pg {
+        flex-direction: column;
+    }
+}
